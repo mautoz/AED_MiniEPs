@@ -98,16 +98,16 @@ int main (void) {
 	/* Item 3: separa o vetor */
 	ParesImpares(&l, &par, &impar);
 	
-	/* Item 2: Imprimi os valores pares e Ìmpares */
+	/* Item 2: Imprimi os valores pares e √≠mpares */
 	printf("\nVetor dos pares");
 	imprimir(par);
 	printf("\n");	
-	printf("\nVetor de Ìmpares");
+	printf("\nVetor de √≠mpares");
 	imprimir(impar);
 	printf("\n");
 	
 	/* Item 1: Remover da lista */
-	/* Pergunta ao usu·rio o n˙mero que ser· deletado */
+	/* Pergunta ao usu√°rio o n√∫mero que ser√° deletado */
 	printf("Digite o elemento que sera deletado: \n");
 	scanf("%d", &num);
 
@@ -115,7 +115,7 @@ int main (void) {
 	imprimir(l);
 	l=remover(&l, num);
 	
-	/* Lista depois da remoÁ„o */
+	/* Lista depois da remo√ß√£o */
 	imprimir(l);
 
 	
