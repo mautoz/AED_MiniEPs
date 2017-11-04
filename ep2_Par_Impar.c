@@ -12,7 +12,7 @@
 #include <string.h>
 #define MAX 50
 
-/* Atualiza a posiÁ„o de acordo com a entrada */
+/* Atualiza a posi√ß√£o de acordo com a entrada */
 int contador = 0;
 
 /* Struct da lista */
@@ -60,7 +60,7 @@ int main (void) {
 	printf("Digite os valores da lista, negativo encerra a leitura: \n");	
 	scanf("%s", n);
 	
-	//Le as strings dadas pelo usu·rio atÈ ser digitado 'fim'
+	//Le as strings dadas pelo usu√°rio at√© ser digitado 'fim'
 	while (strcmp(n, "fim") != 0) { 
 		push(&l, n);
 		scanf("%s", n);	
