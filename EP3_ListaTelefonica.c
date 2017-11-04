@@ -5,8 +5,8 @@
 typedef struct lista Letras;
 typedef struct sublista Nomes;
 
-//Lista de 'inicial' de A até Z, é a lista principal e de cada 'inicial' sai uma 'sublista', chamada apelidos
-//que contém os nomes das 'pessoas'.
+//Lista de 'inicial' de A atÃ© Z, Ã© a lista principal e de cada 'inicial' sai uma 'sublista', chamada apelidos
+//que contÃ©m os nomes das 'pessoas'.
 struct lista {
 	char inicial;
 	Letras *prox;
@@ -19,7 +19,7 @@ struct sublista {
 	Nomes *prox;
 };
 
-//Verifica se entre os valores já cadastrados (lista), existe a inicial do novo nome que será inserido
+//Verifica se entre os valores jÃ¡ cadastrados (lista), existe a inicial do novo nome que serÃ¡ inserido
 int busca (Letras *l, char inicial) {
 	Letras *aux;
 	
@@ -29,7 +29,7 @@ int busca (Letras *l, char inicial) {
 	return 0;	
 }
 
-//Verifica se o nome existe na sublista 1 caso encontre e 0 caso contrário.
+//Verifica se o nome existe na sublista 1 caso encontre e 0 caso contrÃ¡rio.
 int buscaPessoa (Nomes *n, char nome[]) {
 	Nomes *aux;
 	
@@ -53,7 +53,7 @@ Nomes *inserirApelidos (Nomes *n, char apelido[]) {
 	return novo;	
 }
 
-//Inserir a inicial do nome caso ela não esteja na LISTA
+//Inserir a inicial do nome caso ela nÃ£o esteja na LISTA
 Letras *inserir (Letras *l, char nome[], char p) {
 	Letras *novo = malloc(sizeof(Letras));
 	
@@ -63,7 +63,7 @@ Letras *inserir (Letras *l, char nome[], char p) {
 		novo->prox=NULL;
 	else
 		novo->prox=l;
-	//Se não possui a inicial, não precisa verificar se já existe um nome, obrigatoriamente, será o primeiro.
+	//Se nÃ£o possui a inicial, nÃ£o precisa verificar se jÃ¡ existe um nome, obrigatoriamente, serÃ¡ o primeiro.
 	novo->apelidos=inserirApelidos(novo->apelidos, nome);
 	
 	return novo;				
